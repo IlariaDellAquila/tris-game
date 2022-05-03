@@ -1,1 +1,1 @@
-# tris_-game
+# tris-game
