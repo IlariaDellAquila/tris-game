@@ -1,0 +1,13 @@
+<h1 *ngIf="titleWin === ''">Tocca a te: {{turno? 'X' : 'O'}} </h1>
+<h1 *ngIf="titleWin !== ''">{{titleWin}}</h1>
+<div id="grid">
+  <div *ngFor="let c of cells; let ind = index">
+    <app-cell [turno]="c.turno" [color]="c.colored" (clicked)="clickedCell(c.index)">{{c}}</app-cell>
+  </div>
+  <div id="white"></div>
+  <div id="white1"></div>
+  <div id="white2"></div>
+  <div id="white3"></div>
+ <div  *ngIf="end === true" class="block"></div>
+
+</div>

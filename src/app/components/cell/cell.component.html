@@ -1,0 +1,9 @@
+<div  (click)="emitClick($event)"  [@bounce]="!isClicked ? 'noClicked' : 'clicked'" [ngStyle]="{'pointer-events': turno !== undefined ? 'none': 'all'}"
+ [class.colored]="color" >
+ <!-- [ngStyle]="{'pointer-events': (color === true) ? 'none': 'all'}" -->
+   
+  <span> <img *ngIf="turno === true" src="../../../assets/img/close.png"> 
+    <img *ngIf="turno === false" src="../../../assets/img/circle.png">
+</span>
+</div>
+
